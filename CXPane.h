@@ -1,0 +1,1 @@
+// CXPane.h/*	CXPane is a subclass of LPane. 	Overrides DrawSelf, ClickSelf*/#include "LPane.h"class CXPane : public LPane {public:	enum { class_ID = FOUR_CHAR_CODE('XPsa') };		CXPane(LStream *inStream);		virtual void DrawSelf();		virtual void ClickSelf(const SMouseDownEvent &inMouseDown);		virtual LPane* FindPaneInMyWindow(PaneIDT inPaneID);};
